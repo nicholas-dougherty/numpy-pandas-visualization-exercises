@@ -61,20 +61,23 @@ There are several components comprising a Series; easily accessed individually u
     - .value_counts: returns a new Series consisting of a labeled index representing the unique values from the original Series and values representing the frequency of each unique value that appears in the original Series.
         - It's like performing a SQL GROUP BY with a COUNT.
     - nlargest: number of largest values
-    - nsmallest: number of smalle
+    - nsmallest: number of smallest values
+        - I can set the keep parameter to first, last, or all to deal with duplicate largest or smallest values; this is quite handy.
+    - sort_values: sorting in ascending or descending order
+    - sort_index: sorting in ascending or descending orders
     - .describe: returns a Series of descriptive statistics on a pandas Series. 
         - The information it returns depends on the data type of the elements in the Series.
-                   - Other descriptive statistics methods:
-                       - count: number of non-na observations
-                       - sum: sum of values
-                       - mean: mean of values
-                       - median: arithmetic median of values
-                       - min: minimum value
-                       - max: maximum value
-                       - mode: most occurant value
-                       - abs: Absolute Value
-                       - std: bessel-corrected sample standard deviation
-                       - quantile: sample quanitle (value at %)
+- Other descriptive statistics methods:
+    - count: number of non-na observations
+    - sum: sum of values
+    - mean: mean of values
+    - median: arithmetic median of values
+    - min: minimum value
+    - max: maximum value
+    - mode: most occurant value
+    - abs: Absolute Value
+    - std: bessel-corrected sample standard deviation
+    - quantile: sample quanitle (value at %)
     
 
 
